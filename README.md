@@ -1,5 +1,7 @@
-### Coscu Army Awards 
-## Este es un diseño propio de la pagina de los coscu army awards, hecha por fines practicos y educacion.
-# Para ingresar a la pagina oficial ve a: https://caawards.com.ar/
+### Red Hot Chili Peppers
+## Este es un diseño propio hecho por fines practicos y educacion.
+# Para ingresar a la pagina oficial ve a: [https://caawards.com.ar/](https://redhotchilipeppers.com/)
+Incluye aplicacion reproductora de musica online, con toda la discografia de la banda!
 
-![image](https://github.com/user-attachments/assets/3c862974-6a8a-4f3d-b1c0-04f7511bf500)
+![image](https://github.com/user-attachments/assets/9cd80921-0de8-4f1e-a333-b4cfd5e11287)
+![image](https://github.com/user-attachments/assets/cc3fc2e9-1411-4dc4-bcc0-d4799fdcc157)
