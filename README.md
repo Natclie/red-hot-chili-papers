@@ -1,6 +1,6 @@
-### Red Hot Chili Peppers
+# Red Hot Chili Peppers
 ## Este es un diseño propio hecho por fines practicos y educacion.
-# Para ingresar a la pagina oficial ve a: [https://caawards.com.ar/](https://redhotchilipeppers.com/)
+### Para ingresar a la pagina oficial ve a: [https://caawards.com.ar/](https://redhotchilipeppers.com/)
 Incluye aplicacion reproductora de musica online, con toda la discografia de la banda!
 
 ![image](https://github.com/user-attachments/assets/9cd80921-0de8-4f1e-a333-b4cfd5e11287)
