@@ -1,0 +1,45 @@
+---
+import { LogoModelCanvas } from '../components/3D-Logo/LogoModelCanvas.jsx';
+---
+
+<header class="w-full flex absolute z-20 top-0 left-0 justify-center">
+    <div class="flex mt-2 items-center w-[60%] justify-between bg-white/30 rounded-2xl backdrop-blur-[2px]">
+        <span>
+            <a href="/">
+                <LogoModelCanvas client:load className="cursor-pointer" />
+            </a>
+        </span>
+        <nav class="m-5" id="nav-mobile">
+            <ul class="flex gap-5 text-xl font-semibold">
+                <li class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent"><a href="/player">PLAYER</a></li>
+                <li class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent"><a href="/music">MUSIC</a></li>
+                <li class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent"><a target="_blank" href="https://shop.redhotchilipeppers.com/">MERCH</a></li>
+                <li class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent"><a href="/#com">COMMUNITY</a></li>
+            </ul>
+            <button onclick="navBtn()" class="hidden scale-150 cursor-pointer text-orange-500"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </div>
+</header>
+<style>
+    @media (max-width:768px){
+        button {
+            display: block;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 50%;
+            translate: -50%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            padding: 80px 15px;
+            border-radius: 1rem;
+            top: -100vh;
+            transition: top 0.3s ease-in-out;
+        }
+    }
+</style>
+
+<script defer src="/header.js"></script> 

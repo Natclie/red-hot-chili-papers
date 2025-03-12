@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+#gal,#com{
+    background-image: url(../../public/background-colors_lg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@layer utilities {
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+}

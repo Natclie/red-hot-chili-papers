@@ -1,0 +1,60 @@
+---
+import '/src/styles/global.css'
+import 'aos/dist/aos.css';
+import Header from '../components/Header.astro'
+import MediaBtn from '../components/MediaBtn.jsx'
+import Rhcp from '../components/rhcp.jsx'
+import Albums from '../components/AlbumsMap.jsx';
+import Rights from '../components/Rights.astro';
+---
+<script src="https://kit.fontawesome.com/1f814a61ce.js" crossorigin="anonymous"></script>
+<span class="bg-sides h-screen w-full absolute top-0 left-0"></span>
+<header>
+    <Header />
+</header>
+<main>
+    <section id="music" class="w-full min-h-screen">
+        <div class="flex flex-col gap-5 relative items-center pt-20">
+            <div class="text-center flex flex-col gap-3 mt-5">
+                <h2 class="text-4xl font-bold bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent">RETURN OF THE DREAM CANTEN </h2>
+                <p class="text-xl bg-gradient-to-r from-amber-500 to-fuchsia-500 bg-clip-text text-transparent">EXCLUSIVE AND LIMITED EDITIONS</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <Rhcp />
+                <a target="_blank" href="https://lp.constantcontactpages.com/su/fmCwCDF/RHCPMailingList"
+                class="group flex gap-1 items-center p-2 border border-transparent text-md font-bold rounded-3xl shadow-sm transition duration-150 ease-in-out cursor-pointer bg-white/30 backdrop-blur-[2px]">
+                <span class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent">
+                    VIEW ALL!
+                </span>
+                <i class="fa-solid fa-arrow-right rotate-[-45deg] text-fuchsia-900 duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"></i>
+                </a>
+            </div>
+            <div>
+                <MediaBtn />
+            </div>
+        </div>
+    </section>
+    
+    <!-- ALBUMS -->
+    <section id="album" class="min-h-screen w-full">
+        <div>
+            <Albums/>
+        </div>
+        <div>
+            <MediaBtn/>
+        </div>
+    </section>
+    <Rights/>
+</main>
+<style>
+    main{
+        background-image: url(../../public/background-colors_lg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bg-sides{
+        background-image: url(../../public/background-inside-header2.png);
+        background-position: center;
+        background-size: cover;
+    }
+</style>

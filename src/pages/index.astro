@@ -1,0 +1,102 @@
+---
+import '/src/styles/global.css'
+import 'aos/dist/aos.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Gallery from '../components/Gallery.jsx';
+import Buttons from '../components/Buttons.astro';
+import Window from '../components/Window.jsx';
+import MediaBtn from '../components/MediaBtn.jsx';
+import Rights from '../components/Rights.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../public/favicon.ico"/>
+	<title>RED HOT CHILI PEPPERS</title>
+	<script src="https://kit.fontawesome.com/1f814a61ce.js" crossorigin="anonymous"></script>
+</head>
+
+
+<span class="absolute top-0 left-0 w-full h-screen backdrop-blur-[5px] -z-20">
+	<video class="w-full h-screen object-cover" autoplay muted loop src="https://d33wubrfki0l68.cloudfront.net/f213bfc39934b9fa48fd23320c563d836d649d88/e70c5/assets/video/rhcp_return-of-the-dream-canteen_clouds-header_v1d2.mp4" >
+</span>
+	<body>
+		<!-- BODY -->
+		<main class="w-full min-h-screen flex flex-col items-center justify-between p-2">
+			<div>
+				<Header />
+			</div>
+
+			<div class="flex flex-col gap-5">
+				<Buttons />
+				<Footer />
+			</div>
+		</main>
+
+		<!-- GALLERY -->
+		<section id="gal" class="min-h-screen w-full grid items-center">
+			<Gallery client:load />  
+		</section>
+		
+		<!-- COMMUNITY -->
+		<section id="com" class="min-h-screen w-full flex flex-col justify-between items-center p-5">
+			<div class="flex flex-col items-center gap-10 flex-grow">
+				<div class="[&_IMG]:w-16 max-sm:[&_IMG]:hidden flex items-center">
+					<img src="/public/flower.png" alt="">
+					<div class="relative inline-block">
+						<h3 class="absolute top-[3px] font-bold text-[3.30rem] left-[-3px] bg-gradient-to-r from-amber-700 to-fuchsia-800 bg-clip-text text-transparent">
+						COMMUNITY
+						</h3>
+						<h3 class="relative text-[3.25rem] font-bold bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent">
+						COMMUNITY
+						</h3>
+					</div>
+					<img src="/public/heart.png" alt="">
+				</div>
+				<div class="[&_IMG]:w-16 hidden max-sm:block">
+					<div class="flex">
+						<img src="/public/flower.png" alt="">
+						<img src="/public/heart.png" alt="">
+					</div>
+				</div>
+				<p class="text-lg text-center">Subscribe with your email to stay updated on RHCP news and check out our merch!</p>
+
+				<div class="flex justify-center w-full">
+					<Window client:load/>
+				</div>
+				
+				<div class="flex items-center gap-5">
+					<span>
+						<a target="_blank" href="https://lp.constantcontactpages.com/su/fmCwCDF/RHCPMailingList"
+						class="group flex gap-1 items-center p-2 border border-transparent text-md font-bold rounded-3xl shadow-sm transition duration-150 ease-in-out cursor-pointer bg-white/30 backdrop-blur-[2px]">
+						<span class="bg-gradient-to-r from-amber-500 to-fuchsia-600 bg-clip-text text-transparent">
+							SUBSCRIBE!
+						</span>
+						<i class="fa-solid fa-arrow-right rotate-[-45deg] text-fuchsia-900 duration-300 group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"></i>
+						</a>
+					</span>
+					<span>
+						<img class="h-12" src="/public/channel-logo.png" alt="rhcp channel logo">
+					</span>
+				</div>
+				<MediaBtn />
+			</div>
+			
+			<Rights/>
+		</section>
+
+	</body>
+</html>
+<style>
+
+	html{
+		scroll-behavior: smooth;
+	}
+	body {
+		overflow-x: hidden;
+	}
+</style>
