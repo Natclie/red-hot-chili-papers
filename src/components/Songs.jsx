@@ -163,7 +163,7 @@ const MusicPlayer = () => {
 
     {/* SONGS LIST*/ }
     return (
-        <div className="p-1 min-h-screen w-screen flex flex-col">
+        <div className="p-1 h-screen w-screen flex flex-col">
             <header className="h-[9vh] bg-gray-900/50 rounded-xl mb-1">
                 <div className="flex pt-[9px] items-center justify-center gap-3">
                     <div>
@@ -198,9 +198,9 @@ const MusicPlayer = () => {
             </header>
             <div className="flex flex-1 justify-between gap-1 w-full h-full">
                 <div className="absolute w-full h-full top-0 left-0 -z-20">
-                    {selectedAlbum && <img className="w-full min-h-screen object-cover" src={selectedAlbum.img} />}
+                    {selectedAlbum && <img className="w-full h-screen object-cover" src={selectedAlbum.img} />}
                 </div>
-                <span className="absolute w-full min-h-screen top-0 left-0 bg-black/50 backdrop-blur-sm -z-10"></span>
+                <span className="absolute w-full h-screen top-0 left-0 bg-black/50 backdrop-blur-sm -z-10"></span>
                 
                 { /* ALBUM LIST*/}
                 <div className="flex flex-col gap-1">

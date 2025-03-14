@@ -23,23 +23,25 @@ import Rights from '../components/Rights.astro';
 
 <span class="absolute top-0 left-0 w-full h-screen backdrop-blur-[5px] -z-20">
     <video 
-        class="w-full h-screen object-cover pointer-events-none select-none"
+        class="w-full h-screen object-cover pointer-events-none select-none touch-none"
         autoplay 
         muted 
         loop 
+        playsinline
         oncontextmenu="return false;"
         src="https://d33wubrfki0l68.cloudfront.net/f213bfc39934b9fa48fd23320c563d836d649d88/e70c5/assets/video/rhcp_return-of-the-dream-canteen_clouds-header_v1d2.mp4">
     </video>
 </span>
 
+
 	<body>
 		<!-- BODY -->
-		<main class="w-full min-h-screen flex flex-col items-center justify-between p-2">
+		<main class="w-full h-screen flex flex-col items-center justify-between p-2">
 			<div>
 				<Header />
 			</div>
 
-			<div class="flex flex-col gap-5">
+			<div class="flex flex-col gap-5 mb-12">
 				<Buttons />
 				<Footer />
 			</div>
@@ -67,8 +69,8 @@ import Rights from '../components/Rights.astro';
 				</div>
 				<div class="[&_IMG]:w-16 hidden max-sm:block">
 					<div class="flex">
-						<img src="/public/flower.png" alt="">
-						<img src="/public/heart.png" alt="">
+						<img src="/flower.png" alt="">
+						<img src="/heart.png" alt="">
 					</div>
 				</div>
 				<p class="text-lg text-center">Subscribe with your email to stay updated on RHCP news and check out our merch!</p>
@@ -88,7 +90,7 @@ import Rights from '../components/Rights.astro';
 						</a>
 					</span>
 					<span>
-						<img class="h-12" src="/public/channel-logo.png" alt="rhcp channel logo">
+						<img class="h-12" src="/channel-logo.png" alt="rhcp channel logo">
 					</span>
 				</div>
 				<MediaBtn />
